@@ -45,3 +45,21 @@
 .closebtn:hover {
   color: #000;
 }
+a:lina:linkk {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+} 
