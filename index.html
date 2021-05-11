@@ -30,30 +30,7 @@
 
 <body>
 <h1 class="glow">Smart home system</h1>
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyBjlkF2YU_RH1Mxm34tNHO64NxvhrAoZRM",
-    authDomain: "samrthomesystem.firebaseapp.com",
-    projectId: "samrthomesystem",
-    storageBucket: "samrthomesystem.appspot.com",
-    messagingSenderId: "601825534198",
-    appId: "1:601825534198:web:3655777933589a576b8cd7",
-    measurementId: "G-3Y8QD5XC83"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-
+	
 	<header id="header"><!--header-->
 		<div class="header_top"><!--header_top-->
 			<div class="container">
@@ -178,8 +155,11 @@ function googleTranslateElementInit() {
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="search_box pull-right">
-							<input type="text" placeholder="Search"/>
+						<div class="glow">
+							
+<?php
+echo 'Today’s date is <b>' . date('Y/m/d') . '</b> and it’s a <b>'.date('l').'</b> today!';
+?>
 						</div>
 					</div>
 				</div>
