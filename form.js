@@ -10,6 +10,7 @@ var firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
 
 
 var messagesRef = firebase.database().ref('contactformmessages');
