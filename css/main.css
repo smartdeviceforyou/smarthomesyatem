@@ -178,8 +178,7 @@ a#scrollUp i{
   box-shadow: none;
 }
 .btn-group a {
-  left: 0;
-  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .dropdown-menu  li  a:hover, .dropdown-menu  li  a:focus {
