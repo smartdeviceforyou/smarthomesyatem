@@ -8,9 +8,9 @@
   animation: glow 1s ease-in-out infinite alternate;
 }
 #logo {
-  img {
-  float: right;
-}
+  
+  float: left;
+
 }
 
 
