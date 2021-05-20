@@ -52,8 +52,8 @@
 
 
 .baybutton {
-  background-color: #04AA6D;
-  border: none;
+  background-color: transperant;
+  border: 5px;
   color: white;
   padding: 20px;
   text-align: center;
@@ -63,10 +63,6 @@
   margin: 4px 2px;
 }
 
-.button1 {border-radius: 2px;}
-.button2 {border-radius: 4px;}
-.button3 {border-radius: 8px;}
-.button4 {border-radius: 12px;}
 .bay {border-radius: 50%;}
 
 
