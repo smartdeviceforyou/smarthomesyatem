@@ -12,7 +12,9 @@
   
 
 /* Style the links inside the sidenav */
-
+#mySidenav { 
+  float: right;
+}
 #mySidenav a {
   position: absolute; /* Position them relative to the browser window */
   left: -80px; /* Position them outside of the screen */
@@ -23,9 +25,6 @@
   font-size: 20px; /* Increase font size */
   color: white; /* White text color */
   border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-}
-#mySidenav { 
-  float: right;
 }
 #mySidenav a:hover {
   left: 0; /* On mouse-over, make the elements appear as they should */
