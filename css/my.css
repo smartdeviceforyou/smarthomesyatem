@@ -8,7 +8,8 @@
   animation: glow 1s ease-in-out infinite alternate;
 }
 #mySidenav {
-  position: right;
+  
+  
 }
 /* Style the links inside the sidenav */
 #mySidenav a {
