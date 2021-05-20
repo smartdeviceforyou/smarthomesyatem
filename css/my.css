@@ -9,7 +9,7 @@
 }
 /* Style the links inside the sidenav */
 #mySidenav a {
-  position: absolute; /* Position them relative to the browser window */
+  position: right; /* Position them relative to the browser window */
   right: -50px; /* Position them outside of the screen */
   transition: 0.3s; /* Add transition on hover */
   padding: 15px; /* 15px padding */
