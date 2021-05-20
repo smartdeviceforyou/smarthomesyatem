@@ -25,7 +25,7 @@
   border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
 }
 #mySidenav { 
-  float: left;
+  float: right;
 }
 #mySidenav a:hover {
   left: 0; /* On mouse-over, make the elements appear as they should */
