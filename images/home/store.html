@@ -52,6 +52,25 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+ .fixedButton {
+            position: fixed;
+            bottom: 0px;
+            right: 0px; 
+            padding: 20px;
+        }
+ .roundedFixedBtn {
+          height: 60px;
+          line-height: 80px;  
+          width: 60px;  
+          font-size: 2em;
+          font-weight: bold;
+          border-radius: 50%;
+          background-color: #4CAF50;
+          color: white;
+          text-align: center;
+          cursor: pointer;
+        }
+    
 
 
 </style>
@@ -86,7 +105,14 @@
 
 <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 <div id="main">
-  >>>>
+
+      <a class="fixedButton">
+         <div class="roundedFixedBtn">
+            <i class="fa fa-phone"></i>
+         </div>
+      </a>
+    
+
 </div> 
 <script>
 
