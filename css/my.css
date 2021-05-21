@@ -12,7 +12,13 @@ html {
   scroll-behavior: smooth;
 }
 
-  
+ #boxb {
+   border-style: solid; 
+   border-color: #0099ff;  
+   border-width: 3px; 
+   border-radius: 25px; 
+   padding: 5px;
+   }
 
 /* Style the links inside the sidenav */
 #aaa { 
