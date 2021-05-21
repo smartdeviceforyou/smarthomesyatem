@@ -8,7 +8,10 @@
   animation: glow 1s ease-in-out infinite alternate;
 }
 
-  
+html {
+  scroll-behavior: smooth;
+}
+
   
 
 /* Style the links inside the sidenav */
