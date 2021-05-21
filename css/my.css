@@ -11,6 +11,28 @@
 html {
   scroll-behavior: smooth;
 }
+ #wind1 {
+          position: fixed;
+          bottom: 70%;
+          left:80%;
+          border-radius: 50%;
+    }
+ 
+  #wind2 {
+          position: fixed;
+          bottom:80%;
+          left:80%;
+          border-radius: 50%;
+   }
+ #wind3 {
+          position: fixed;
+          bottom:90%;
+          left:80%;
+          border-radius: 50%;
+   }
+ #wind3 a {
+  border-radius: 50%;
+}
 
  #boxb {
    border-style: solid; 
