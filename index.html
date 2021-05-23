@@ -28,7 +28,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
  <style>
-     .sidenav {
+     .sidenava {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
@@ -42,7 +42,7 @@
 }
 
 /* The navigation menu links */
-.sidenav a {
+.sidenava a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -52,12 +52,12 @@
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidenava a:hover {
   color: orange;
 }
 
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+.sidenava .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
@@ -71,14 +71,14 @@
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenava {padding-top: 15px;}
+  .sidenava a {font-size: 18px;}
 }
 </style>
 </head><!--/head-->
 
 <body>
-  <div id="mySidenav" class="sidenav" style=" background-color: #000000; border: 2px solid orange;">
+  <div id="mySidenav" class="sidenava" style=" background-color: #000000; border: 2px solid orange;">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#mumbai">Mumbai</a>
   <a href="#">Pune</a>
@@ -102,7 +102,7 @@
   <a href="#">Contact</a>
 </div>
 
-<div id="dlatur" class="sidenav" style=" background-color: #000000; border: 2px solid orange;" >
+<div id="dlatur" class="sidenava" style=" background-color: #000000; border: 2px solid orange;" >
   <a href="javascript:void(0)" class="closebtn" onclick="dlaturcloseNav()">&times;</a>
   <a href="#">latur</a>
   <a href="#">Ratnagiri</a>
@@ -170,10 +170,10 @@
 							
 							
                                                            <div class="btn-group">
-								<button type="button" onclick="openNav()" class="btn btn-default ">
+								<a onclick="openNav()">
 									<img src="images/c1.png" style="width:50px; height:50px; border-radius: 50%;">
 									
-								</button>
+								</a>
 								
                            
 							</div>
