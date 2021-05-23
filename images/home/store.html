@@ -12,7 +12,6 @@
   z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
-  background-color: #111; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -133,7 +132,7 @@ html {
 </style>
 </head>
 <body>
- <div id="mySidenav" class="sidenav">
+ <div id="mySidenav" class="sidenav" style=" background-color: orange;">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#mumbai">Mumbai</a>
   <a href="#">Pune</a>
@@ -157,7 +156,7 @@ html {
   <a href="#">Contact</a>
 </div>
 
-<div id="dlatur" class="sidenav">
+<div id="dlatur" class="sidenav" style=" background-color: red;" >
   <a href="javascript:void(0)" class="closebtn" onclick="dlaturcloseNav()">&times;</a>
   <a href="#">latur</a>
   <a href="#">Ratnagiri</a>
