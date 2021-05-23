@@ -141,7 +141,7 @@ html {
   <a href="#">Usmanabad</a>
   <a href="#nanded">Nanded</a>
   <a href="#beed">Beed</a>
-  <a href="#latur">Latur</a>
+  <a onclick="dlaturopenNav()">Latur</a>
   <a href="#">Solapur</a>
   <a href="#">Satara</a>
   <a href="#">Ratnagiri</a>
@@ -157,7 +157,21 @@ html {
   <a href="#">Contact</a>
 </div>
 
-                                                                     
+<div id="dlatur" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="dlaturcloseNav()">&times;</a>
+  <a href="#">latur</a>
+  <a href="#">Ratnagiri</a>
+  <a href="#">Jalgaon</a>
+  <a href="#">Contact</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>                                                                
 
 
 
@@ -278,7 +292,16 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 } 
+function dlaturopenNav() {
+  document.getElementById("dlatur").style.width = "200px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
 
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function dlaturcloseNav() {
+  document.getElementById("dlatur").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+} 
 
 </script>
    
