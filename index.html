@@ -81,7 +81,7 @@
   <div id="mySidenav" class="sidenava" style=" background-color: #000000; border: 2px solid orange;">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a onclick="dlaturopenNav()">Latur</a>
-  <a onclick="alert( <p>smart home system </p>);">Contact</a>
+  <a onclick="window1">Contact</a>
   <a href="#">About</a>
   <a href="#">Services</a>
   <a href="#">Clients</a>
@@ -498,7 +498,13 @@
 		</div>
 		
 	</footer><!--/Footer-->
-	
+<script>
+function window1() {
+  var myWindow = window.open("", "", "width=60,height=150");
+  myWindow.document.write("<p>A new window!</p>");
+  myWindow.focus();
+}
+</script>	
 <script>
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
