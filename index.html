@@ -76,6 +76,41 @@
   .sidenava {padding-top: 15px;}
   .sidenava a {font-size: 18px;}
 }
+.imgbtn img {
+  width:62px;
+  height:62px;
+  border-radius: 50%; 
+  padding:4px; 
+  background-color: #668cff;
+ }
+.imgbtn:hover img {
+  width:72px;
+  height:72px;
+  background-color: #1aff1a;
+}
+.imgbtn1 img {
+  width:62px;
+  height:62px;
+  border-radius: 50%; 
+  padding:4px; 
+  background-color: #1ad1ff;
+ }
+.imgbtn1:hover img {
+  width:72px;
+  height:72px;
+  background-color: #00ffaa;
+}
+.imgbtn2 img {
+  border-radius: 50%; 
+  padding:4px; 
+  background-color: #3333ff;
+ }
+.imgbtn2:hover img {
+  width:72px;
+  height:72px;
+  background-color: #ffff1a;
+}
+
 </style>
 </head><!--/head-->
 
@@ -159,8 +194,8 @@
 							
 							
                                                            <div class="btn-group">
-								<a onclick="openNav()"><img src="images/c1.png" style="width:55px; height:55px; border-radius: 50%; animation-name: zoomIn; animation-duration: 5s;"></a>
-								<a href="shop.html"><img src="images/home/shop.png" style="width:55px;height:55px; border-radius: 50%; animation-name: zoomIn; animation-duration: 5s;"></a>       
+								<a class="imgbtn" onclick="openNav()"><img src="images/c1.png" style="animation-name: zoomIn; animation-duration: 5s;"></a>
+								<a class="imgbtn" href="shop.html"><img src="images/home/shop.png" style="animation-name: zoomIn; animation-duration: 5s;"></a>       
 								          
                            
 							</div>
@@ -291,19 +326,19 @@
 								</div>
 								<div class="choose">
                                                                          <div class="column">
-									  <a onclick="document.getElementById('imgp1').src='images/relay5v.jpg'"><img style="width:52px;height:52px; border-radius: 50%; padding:2px; background-color: red;  animation-name: fadeOutRight; animation-duration: 2s;" src="images/g1.png" /></a>
-                                                                          <a onclick="document.getElementById('imgp1').src='images/Ir.jpg'"><img style="width:52px;height:52px; border-radius: 50%;" src="images/g2.png"  /></a>
-                                                                          <a onclick="document.getElementById('imgp1').src='images/Pm.jpg'"><img style="width:52px;height:52px; border-radius: 50%;" src="images/g3.png" /></a>
-                                                                          <a onclick="document.getElementById('imgp1').src='images/Atmega.jpg'"><img style="width:52px;height:52px; border-radius: 50%;" src="images/g4.png"  /></a>
-                                                                          <a onclick="document.getElementById('imgp1').src='images/16hz.jpg'"><img style="width:52px;height:52px; border-radius: 50%;" src="images/g5.png" /></a>
+									  <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/relay5v.jpg'"><img src="images/g1.png" /></a>
+                                                                          <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/Ir.jpg'"><img src="images/g2.png"  /></a>
+                                                                          <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/Pm.jpg'"><img src="images/g3.png" /></a>
+                                                                          <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/Atmega.jpg'"><img src="images/g4.png"  /></a>
+                                                                          <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/16hz.jpg'"><img src="images/g5.png" /></a>
                                                                          </div>
                                                                           <h2>10 Ru</h2>
 								          <p>Relay 5v</p>
                                                                          <div class="column">
-                                                                          <a href="owner.html"><img src="amazon.png" alt="Avatar" class="avatar"  style="width:55px;height:55px; border-radius: 50%;"></a>       
-								          <a href="owner.html"><img src="paytm.png" alt="Avatar" class="avatar"  style="width:55px;height:55px; border-radius: 50%;"></a>       
-								          <a href="owner.html"><img src="flipkart.png" alt="Avatar" class="avatar"  style="width:55px;height:55px; border-radius: 50%;"></a>       
-								          <a href="owner.html"><img src="indiamart.png" alt="Avatar" class="avatar"  style="width:55px;height:55px; border-radius: 50%;"></a> 
+                                                                          <a class="imgbtn2" href="owner.html"><img src="amazon.png" ></a>       
+								          <a class="imgbtn2" href="owner.html"><img src="paytm.png" ></a>       
+								          <a class="imgbtn2" href="owner.html"><img src="flipkart.png" ></a>       
+								          <a class="imgbtn2" href="owner.html"><img src="indiamart.png" ></a> 
 								         </div>
 							       </div>
 						      </div>
