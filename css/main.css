@@ -852,7 +852,7 @@ h2.title {
 .product-image-wrapper{
 	
 	overflow: hidden;
-	margin-bottom:30px;
+	margin-bottom:5px;
 }
 
 .single-products {
@@ -904,7 +904,7 @@ h2.title {
   width: 100%;
   display: block;
   opacity:;
-  border-radius: 30px;
+  border-radius: 25px;
 }
 
 .single-products:hover .product-overlay {
@@ -989,7 +989,7 @@ h2.title {
 }
 
 .choose ul li a i{
-	margin-right:5px;
+	margin-right:15px;
 }
 
 .choose ul li a:hover{
