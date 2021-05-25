@@ -12,7 +12,7 @@ html {
   scroll-behavior: smooth;
 }
  #wind1 {
-          
+          position : fixed;
           bottom: 70%;
           left:80%;
           border-radius: 50%;
