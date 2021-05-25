@@ -7,7 +7,7 @@
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
 }
-
+@media screen and (max-width: 650px) {
 html {
   scroll-behavior: smooth;
 }
@@ -36,7 +36,7 @@ html {
  #wind3 a {
   border-radius: 50%;
 }
-
+}
  #boxb {
    border-style: solid; 
    border-color: #0099ff;  
