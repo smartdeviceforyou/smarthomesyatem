@@ -22,13 +22,13 @@ html {
   padding: 20px;
 }
   #wind2 {
-          position: relative;
+          position: fixed;
           bottom:80%;
           left:80%;
           border-radius: 50%;
    }
  #wind3 {
-          position: static;
+          position: fixed;
           bottom:90%;
           left:80%;
           border-radius: 50%;
