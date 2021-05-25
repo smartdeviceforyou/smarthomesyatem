@@ -52,11 +52,31 @@
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 650px) {
+@media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
- #wind1 {
+ 
+html {
+  scroll-behavior: smooth;
+   box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+  img {
+   border-radius: 25px;
+  }
+.column {
+  width: 33.3%;
+  padding: 0 1px;
+  align-content: center;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  #wind1 {
           
           bottom: 76%;
           left:80%;
@@ -85,25 +105,6 @@
           left:80%;
           border-radius: 50%;
    }
-html {
-  scroll-behavior: smooth;
-   box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-  img {
-   border-radius: 25px;
-  }
-.column {
-  width: 33.3%;
-  padding: 0 1px;
-  align-content: center;
-}
-
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
   .column {
     width: 100%;
     display: block;
