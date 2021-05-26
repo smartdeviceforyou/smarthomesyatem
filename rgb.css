@@ -1,6 +1,6 @@
 .rgb {
-    width: 220px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border: none;
     outline: none;
     color: #fff;
@@ -8,7 +8,7 @@
     cursor: pointer;
     position: relative;
     z-index: 0;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 .rgb:before {
@@ -49,7 +49,7 @@
     background: #111;
     left: 0;
     top: 0;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 @keyframes glowing {
