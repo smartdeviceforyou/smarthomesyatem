@@ -6,6 +6,12 @@
 <style>
 
 .sidenav {
+  background-color: #000000; 
+  border: 2px solid;
+  border-color: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  z-index: -1;
+  filter: blur(5px); 
+  animation: glowing 20s linear infinite;
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
@@ -182,20 +188,58 @@ html {
   animation-name: fadeOutTopRight; 
   animation-duration: 3s;
 }
-.ifs {
-    width:180px; 
-    height:180px; 
-    border-radius: 50%; 
-    box-shadow: 2px 2px 5px blue;
-.ifs:hover {
-    width:100%; 
-    height:100%;
- }
+
 }
+.rgb {
+    
+    
+    
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+}
+
+.rgb:before {
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    z-index: -1;
+    filter: blur(5px);
+    
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+   
+}
+
+.rgb:active {
+    color: #000
+}
+
+.rgb:active:after {
+    background: transparent;
+}
+
+.rgb:hover:before {
+    opacity: 1;
+}
+
+.rgb:after {
+    z-index: -1;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+Resources
 </style>
 </head>
 <body>
- <div id="mySidenav" class="sidenav" style=" background-color: #000000; border: 2px solid orange;">
+ <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#mumbai">Mumbai</a>
   <a href="#">Pune</a>
