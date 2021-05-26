@@ -1,7 +1,7 @@
 .rgb {
-    width: 70px;
-    height: 70px;
-    border: none;
+    
+    
+    
     outline: none;
     color: #fff;
     background: #111;
@@ -25,7 +25,7 @@
     animation: glowing 20s linear infinite;
     opacity: 0;
     transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 .rgb:active {
