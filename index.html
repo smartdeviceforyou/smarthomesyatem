@@ -136,15 +136,10 @@
   <div id="mySidenav" class="sidenava" style=" background-color: #000000; border: 2px solid orange;">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a onclick="dpuneopenNav()">Pune</a>
-  <a onclick=". ">Latur</a>
   <a href="#">Remote cantrol switch</a>
   <a href="#">Online cantrol switch</a>
   <a href="#">Automatic water tank</a>
   <a href="#">Temperature cantrol</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
 </div>
 
 <div id="dpune" class="sidenava" style=" background-color: #000000; border: 2px solid orange;" >
@@ -153,11 +148,6 @@
   <a href="#">About</a>
   <a href="#">Services</a>
   <a href="#">Clients</a>
-  <a href="#">Contact</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
 </div>                                                                
 
 	<header id="header"><!--header-->
@@ -460,13 +450,13 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 } 
-function dlaturopenNav() {
+function dpuneopenNav() {
   document.getElementById("dpune").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function dlaturcloseNav() {
+function dpunecloseNav() {
   document.getElementById("dpune").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 } 
