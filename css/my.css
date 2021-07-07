@@ -7,6 +7,10 @@
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
 }
+.col-3 {
+   width:33.33%;
+   border-radius: 50%;
+}
  #wind1 {
           position: fixed;
           bottom: 85%;
@@ -35,6 +39,10 @@
 @media screen and (max-width: 650px) {
 html {
   scroll-behavior: smooth;
+}
+.col-3 {
+   width:100%;
+   border-radius: 50%;
 }
  #wind1 {
           position: fixed;
