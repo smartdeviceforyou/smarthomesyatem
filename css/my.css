@@ -9,8 +9,8 @@
 }
  #wind1 {
           position: fixed;
-          bottom: 90%;
-          left:70%;
+          bottom: 85%;
+          left:80%;
           border-radius: 50%;
     }
  #main {
@@ -19,13 +19,13 @@
 }
   #wind2 {
           position: fixed;
-          bottom:90%;
-          left:80%;
+          bottom:85%;
+          left:85%;
           border-radius: 50%;
    }
  #wind3 {
           position: fixed;
-          bottom:90%;
+          bottom:85%;
           left:90%;
           border-radius: 50%;
    }
