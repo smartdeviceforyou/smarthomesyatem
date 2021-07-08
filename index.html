@@ -29,8 +29,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
  <style>
-     
-.sidenava {
+     .sidenava {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
@@ -48,11 +47,11 @@
 .sidenava a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 25px;
   color: #ffffff;
   display: block;
   transition: 0.3s;
-  animation-name: fadeIn; 
+  animation-name: fadeInRight; 
   animation-duration: 2s;
  
 }
@@ -60,7 +59,7 @@
 /* When you mouse over the navigation links, change their color */
 .sidenava a:hover {
   color: orange;
-  animation-name: fadeOut; 
+  animation-name: fadeOutRight; 
   animation-duration: 2s;
 }
 
@@ -78,19 +77,9 @@
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-width: 650px) {
-  .sidenava {
-	  padding-top: 15px;
-	 
-	}
-  .sidenava a {
-	  font-size: 18px;
-	   animation-name: fadeInRight;
-	}
-.sidenava a:hover {
-  animation-name: fadeOutRight;
-	
-	}
+@media screen and (max-height: 450px) {
+  .sidenava {padding-top: 15px;}
+  .sidenava a {font-size: 18px;}
 }
 .imgbtn img {
   width:62px;
@@ -110,14 +99,14 @@
   border-radius: 50%; 
   padding:4px; 
   background-color: #1ad1ff;
-  animation-name: fadeIn; 
+  animation-name: fadeInLeft; 
   animation-duration: 5s;
  }
 .imgbtn1:hover img {
   width:72px;
   height:72px;
   background-color: #00ffaa;
-  animation-name: fadeOut; 
+  animation-name: fadeOutLeft; 
   animation-duration: 2s;
 }
 .imgbtn2 img {
@@ -140,7 +129,6 @@
  background-color: orange;
  border-radius: 15px;
 }
-
 </style>
 </head><!--/head-->
 
@@ -149,15 +137,12 @@
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a onclick="dpuneopenNav()">PUNE</a>
   <a href="#">REMOTE CONTROL</a>
-  <a href="#">REMOTE + MANUAL</a>
   <a href="#">ONLINE CANTROL</a>
-  <a href="#">ONLINE + MANUAL</a>
-  <a href="#">REMOTE + ONLINE + MANUAL</a>
+  <a href="#">REMOTE + ONLINE</a>
   <a href="#">ROOM TEMPERATURE CANTROL</a>
   <a href="#">TEMPERATURE CANTROLD WATER HEATER</a>
   <a href="#">RGB LIGHTING</a>
   <a href="#">AUTOMATIC WATER TANK</a>
-  <a href="#">WEB UI'S</a>
 </div>
 
 <div id="dpune" class="sidenava" style=" background-color: #000000; border: 2px solid orange;" >
@@ -170,22 +155,30 @@
 
 	<header id="header"><!--header-->
 		<div class="header_top"><!--header_top-->
-		 <div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<ul class="nav nav-pills">
-					   <div class="column">
-                                              <a><img style="height: 55px; width:55px;  animation-name: zoomInUp; animation-duration: 3s;" src="images/logoround.png" /></a>
-					   </div>
-					   <div class="glow">
-				              <h4 style="color:orange; animation-name: fadeInUpBig; animation-duration: 2s; ">Automation is future</h4>
-				            </div>
-					   
-					</ul>
-				</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<div class="column">
+                                                                        <a class="rgb"><img style="height: 55px; width:55px;  animation-name: zoomInUp; animation-duration: 3s;" src="images/logoround.png" /></a>
+									</div>
+                                                                   <div id="titl" style="height:100px; with:400px;">
+							                 <h4 style="color:orange; animation-name: fadeInUpBig; animation-duration: 2s; ">Automation is future</h4>
+						                        
+								</div>
+								
+								
+								
+								
+                                                                    
+								
+							</ul>
+						</div>
+					</div>
 					
+				</div>
 			</div>
-		 </div>
 		</div><!--/header_top-->
 		        
 
@@ -301,9 +294,21 @@
 	<section>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12">
+				<div class="col-sm-3">
+					<div class="left-sidebar">
+						
+					
+					
+						
+						
+					
+					</div>
+				</div>
+				
+				<div class="col-sm-9 padding-right">
+					<div class="features_items"><!--features_items-->
 						<h2 class="title text-center">Products</h2>
-						<div id="p1" class="col-3">
+						<div id="p1" class="col-sm-4">
 							<div class="product-image-wrapper" style="border-style: solid; border-color: #0099ff;  border-width: 2px; border-radius: 25px; padding: 5px; background-color:: #b3d9ff;" >
 								<div class="single-products">
 									<div class="productinfo text-center">
@@ -335,6 +340,13 @@
 							       </div>
 						      </div>
 						</div>
+                                                
+					</div><!--features_items-->
+					
+					
+					
+					
+					
 				</div>
 			</div>
 		</div>
@@ -349,7 +361,7 @@
 				<div class="row">
 					<div class="col-sm-2">
 						<div class="companyinfo">
-							<h2><span>SMART </span>HOME SYSTEM</h2>
+							<h2><span>SMART</span>HOME SYSTEM</h2>
 							<p>Smart Devices</p>
 						</div>
 					</div>
