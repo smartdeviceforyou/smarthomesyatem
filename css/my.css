@@ -6,7 +6,20 @@
    width:33.33%;
    border-radius: 50%;
 }
+/* Create two equal columns that floats next to each other */
+#cl {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
 
+/* Clear floats after the columns */
+#rw:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 #main {
   transition: margin-left .5s;
   padding: 20px;
