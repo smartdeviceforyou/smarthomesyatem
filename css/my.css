@@ -1,5 +1,5 @@
 .glow {
-  font-size: 10px;
+  font-size: 40px;
   color: #fff;
   font-family: cursive;
   text-align: center;
@@ -7,7 +7,7 @@
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
    padding-top: 25px;
-   padding-bottom: 25px;
+   padding-bottom: 150px;
 }
 .col-3 {
    width:33.33%;
@@ -43,6 +43,17 @@
 @media screen and (max-width: 650px) {
 html {
   scroll-behavior: smooth;
+}
+  .glow {
+  font-size: 10px;
+  color: #fff;
+  font-family: cursive;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+   padding-top: 25px;
+   padding-bottom: 25px;
 }
 .col-3 {
    width:100%;
