@@ -1,11 +1,5 @@
 .glow {
-  font-size: 40px;
-  color: #fff;
-  font-family: cursive;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+  font-size: 100px;
    padding-top: 25px;
    padding-bottom: 150px;
 }
