@@ -7,13 +7,42 @@
    border-radius: 50%;
 }
 /* Create two equal columns that floats next to each other */
-#cl {
+#cl-2 {
   float: left;
   width: 50%;
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
 }
-
+#cl-3 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+#cl-4 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+#cl-5 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+#cl-t1 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 100px; /* Should be removed. Only for demonstration */
+}
+#cl-t2 {
+  float: left;
+  width: 60%;
+  padding: 10px;
+  height: 100px; /* Should be removed. Only for demonstration */
+}
 /* Clear floats after the columns */
 #rw:after {
   content: "";
