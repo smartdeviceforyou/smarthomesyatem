@@ -6,6 +6,8 @@
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
+   padding-top: 25px;
+   padding-bottom: 25px;
 }
 .col-3 {
    width:33.33%;
