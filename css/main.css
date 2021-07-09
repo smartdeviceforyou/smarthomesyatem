@@ -140,13 +140,12 @@ a#scrollUp i{
   border-bottom: 1px solid #f5f5f5;
   margin-left: 0;
   margin-right: 0;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .header-middle .container .row .col-sm-4{
   padding-left: 0;
-  
 }
 
 .header-middle .container .row .col-sm-8 {
@@ -177,9 +176,6 @@ a#scrollUp i{
 .btn-group.open .dropdown-toggle {
   background: rgba(0, 0, 0, 0);
   box-shadow: none;
-}
-.btn-group a {
-  padding-right: 15px;
 }
 
 .dropdown-menu  li  a:hover, .dropdown-menu  li  a:focus {
@@ -850,9 +846,9 @@ h2.title {
 }
 
 .product-image-wrapper{
-	
+	border:1px solid #F7F7F5;
 	overflow: hidden;
-	margin-bottom:5px;
+	margin-bottom:30px;
 }
 
 .single-products {
@@ -904,7 +900,6 @@ h2.title {
   width: 100%;
   display: block;
   opacity:;
-  border-radius: 25px;
 }
 
 .single-products:hover .product-overlay {
@@ -989,7 +984,7 @@ h2.title {
 }
 
 .choose ul li a i{
-	margin-right:15px;
+	margin-right:5px;
 }
 
 .choose ul li a:hover{
