@@ -51,7 +51,7 @@
   color: #ffffff;
   display: block;
   transition: 0.3s;
-  animation-name: fadeInRight; 
+  animation-name: fadeIn; 
   animation-duration: 2s;
  
 }
@@ -59,7 +59,7 @@
 /* When you mouse over the navigation links, change their color */
 .sidenava a:hover {
   color: orange;
-  animation-name: fadeOutRight; 
+  animation-name: fadeOut; 
   animation-duration: 2s;
 }
 
@@ -77,9 +77,10 @@
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 650px) {
   .sidenava {padding-top: 15px;}
-  .sidenava a {font-size: 18px;}
+  .sidenava a {font-size: 18px;animation-name: fadeInRight; }
+	.sidenava a:hover {animation-name: fadeOutRight; }
 }
 .imgbtn img {
   width:62px;
@@ -352,7 +353,7 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="companyinfo">
-							<h2><span>SMART</span>HOME SYSTEM</h2>
+							<h2><span>SMART </span>HOME SYSTEM</h2>
 							<p>Smart Devices</p>
 						</div>
 					</div>
