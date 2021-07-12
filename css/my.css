@@ -40,14 +40,13 @@
 #cl-t2 {
   float: left;
   width: 50%;
-  padding: 10px;
-  height: 80px; /* Should be removed. Only for demonstration */
+  height: 120px; /* Should be removed. Only for demonstration */
 }
 #cl-t2 h4 {
    text-align: center;
    font-size: 40px; 
    font-family: cursive; 
-   padding: 20px;
+   padding: 10px;
 }
 /* Clear floats after the columns */
 #rw:after {
