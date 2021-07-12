@@ -2,9 +2,7 @@
   font-size: 15px;
 
 }
-.col-3 {
-   width:33.33%;
-   border-radius: 50%;
+
 }
 /* Create two equal columns that floats next to each other */
 #cl-2 {
@@ -15,8 +13,9 @@
 }
 #cl-3 {
   float: left;
-  width: 33.33%;
+  width: 30%;
   padding: 10px;
+  margin-left: 25px;
   height: 300px; /* Should be removed. Only for demonstration */
 }
 #cl-4 {
