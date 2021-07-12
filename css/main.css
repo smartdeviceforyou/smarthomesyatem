@@ -33,7 +33,7 @@ a {
     -o-transition: 300ms;
     transition: 300ms;
 }
-.col-sm-6 h1 h2 p { padding: 10px;}
+.col-sm-6 h1 h2 p { padding: 10px; float: top;}
 	
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
