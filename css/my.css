@@ -104,6 +104,10 @@ html {
    width:100%;
    border-radius: 50%;
 }
+  .col-2 {
+   width:100%;
+   border-radius: 50%;
+  }
  #wind1 {
           position: fixed;
           bottom: 70%;
