@@ -35,14 +35,15 @@
   float: left;
   width: 20%;
   padding: 20px;
-  height: 100px; /* Should be removed. Only for demonstration */
+  height: 80px; /* Should be removed. Only for demonstration */
 }
 #cl-t2 {
   float: left;
   width: 50%;
   padding: 10px;
-  height: 100px; /* Should be removed. Only for demonstration */
+  height: 80px; /* Should be removed. Only for demonstration */
 }
+ #cl-t2 h4 {text-align: center;font-size: 20px; font-family: cursive; padding: 20px;}
 /* Clear floats after the columns */
 #rw:after {
   content: "";
@@ -79,6 +80,7 @@
 html {
   scroll-behavior: smooth;
 }
+  #cl-t2 h4 {text-align: center;font-size: 10px; font-family: cursive;}
   .glow {
   font-size: 10px;
   color: #fff;
