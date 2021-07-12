@@ -40,7 +40,7 @@
 #cl-t2 {
   float: left;
   width: 80%;
-  height: 120px; /* Should be removed. Only for demonstration */
+  height: 80px; /* Should be removed. Only for demonstration */
 }
 #cl-t2 h4 {
    text-align: center;
