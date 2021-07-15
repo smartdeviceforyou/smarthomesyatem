@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SMART WEB UI</title>
+
+    <style>
+        html {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        .card a {
+            position: static;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .btn {
+            box-sizing: border-box;
+            background-color: transparent;
+            border: 2px solid #e74c3c;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1;
+            margin: 20px;
+            padding: 30px 26px 30px 26px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 700;
+            border-color: #3498db;
+            color: white;
+            box-shadow: 0 0 7px 1px #e5e8eb inset, 0 0 7px 15px #9fb4b4;
+        }
+        
+        .btn:hover,
+        .btn:focus {
+            padding: 27px 23px 27px 23px;
+            border-color: #3498db;
+            outline: 0;
+            color: white;
+            box-shadow: 0 0 7px 3px #e5e8eb inset, 0 0 3px 0px #5b6d75;
+        }
+        
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 20px;
+            border-radius: 5px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+        
+        .slider:hover {
+            opacity: 1;
+        }
+        
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 30px;
+            height: 35px;
+            border-radius: 33%;
+            background: #04BB6D;
+            cursor: pointer;
+        }
+        
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #04AA6D;
+            cursor: pointer;
+        }
+        
+        .bout {
+            float: left;
+            width: relative;
+            margin: 10px;
+            padding: 2px;
+            box-shadow: 0 0 10px 3px #39db34 inset, 0 0 3px 1px #69ff4b6c;
+            border: 2px solid orange;
+            border-radius: 50%;
+        }
+        
+        .bout:hover {
+            box-shadow: 0 0 10px 1px #db4d34 inset, 0 0 3px 0 #db4d34;
+        }
+    </style>
+</head>
+
+<body style="background-color: #fce4e4;">
+
+
+    <h1 style="  color: white; text-shadow: 2px 2px 4px #000000;"> SMART BOARD </h1>
+
+    <div style="float: left;width: relative;margin: 10px;padding: 2px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 35%;background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);">
+        <p style="text-align: center;">LIGHT: ON</p>
+        <div class="bout">
+            <a class="btn" href="#">ON</a>
+        </div>
+    </div>
+
+    <div class="bout">
+        <a class="btn" href="#">OF</a>
+    </div>
+
+    <div style="background-image: linear-gradient(to right, rgb(218, 95, 95),rgb(214, 160, 60),rgb(218, 218, 76),rgb(56, 143, 56),rgb(118, 118, 180),rgb(127, 95, 150),rgb(122, 76, 122));float: left;width: 100%;margin: 10px;padding: 15px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 15px;">
+        <p>FAN SPEED >>>>>>>>> : <span id="demo"></span>%</p>
+        <input type="range" min="1" max="100" value="1" class="slider" id="myRange">
+    </div>
+    <div style="float: left;width: 100%;margin: 10px;padding: 10px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 30px;">
+        <p>FAN SPEED >>>>>>>>> : <span id="demo1"></span>%</p>
+        <input type="range" min="1" max="100" value="1" class="slider" id="myRange1">
+    </div>
+
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        var slider1 = document.getElementById("myRange1");
+        var output1 = document.getElementById("demo1");
+        output.innerHTML = slider.value;
+        output1.innerHTML = slider1.value;
+
+        slider.oninput = function() {
+            output.innerHTML = this.value;
+        }
+        slider1.oninput = function() {
+            output1.innerHTML = this.value;
+        }
+    </script>
+
+</body>
+
+</html>
