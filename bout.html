@@ -216,15 +216,15 @@
              colorWell.select();
             }
          function updateFirst(event) {
-          var p = document.querySelector("p");
+          var body = document.querySelector("body");
 
-           if (p) {
-           p.style.color = event.target.value;
+           if (body) {
+           body.style.color = event.target.value;
             }
           }
               function updateAll(event) {
-              document.querySelectorAll("p").forEach(function(p) {
-              p.style.color = event.target.value;
+              document.querySelectorAll("body").forEach(function(body) {
+              body.style.color = event.target.value;
               });
            }
 </script>
