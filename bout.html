@@ -103,6 +103,12 @@
         .bout:hover {
             box-shadow: 0 0 10px 1px #db4d34 inset, 0 0 3px 0 #db4d34;
         }
+        .temp { float: left;width: relative;margin: 10px;padding: 2px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 25px;background-image: linear-gradient(to right, red,orange,yellow);
+        }
+        .mintemp { style="float: left;width: relative;margin: 10px;padding: 2px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 25px;
+        }
+        .maxtemp { style="float: left;width: relative;margin: 10px;padding: 2px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 25px;
+        }
     </style>
 </head>
 
@@ -132,7 +138,7 @@
     </div>
     <div class="temp">
       <div class="mintemp">
-  <label for="ltemp">Choose a car:</label>
+  <label for="ltemp">Min-Temp:</label>
 <select name="ltemp" id="lowtemp">
   <option  href="20" >20</option>
   <option  href="21" >21</option>
@@ -142,7 +148,7 @@
 </select>
       </div>
       <div class="mixtemp">
-<label for="htemp">Choose a car:</label>
+<label for="htemp">Max-Temp:</label>
 <select name="htemp" id="hightemp">
   <option  href="20" >20</option>
   <option  href="21" >21</option>
