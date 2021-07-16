@@ -19,7 +19,9 @@
         *:after {
             box-sizing: inherit;
         }
-        
+        .card {
+         float: left;width: 15%;margin: 10px;padding: 2px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 35%;
+     }
         .card a {
             position: static;
             margin: 10px;
@@ -115,6 +117,106 @@
         .roomcolor { float: left; width: 95%;margin: 7px;padding: 7px 20px;box-shadow: 0 0 7px 1px #e5e8eb inset, 0 0 7px 4px #5b6d75; border: 2px solid orange;border-radius: 25px;background-image: linear-gradient(to right, red,orange,yellow);
         }
         #colorWell {width: 35%;}
+ @media screen and (max-width: 600px) {
+     .card {
+         float: left;width: 40%;margin: 10px;padding: 2px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 35%;
+     }
+   .card a {
+            position: static;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .btn {
+            box-sizing: border-box;
+            background-color: transparent;
+            border: 2px solid #e74c3c;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1;
+            margin: 20px;
+            padding: 30px 26px 30px 26px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 700;
+            border-color: #3498db;
+            color: white;
+            box-shadow: 0 0 7px 1px #e5e8eb inset, 0 0 7px 15px #9fb4b4;
+        }
+        
+        .btn:hover,
+        .btn:focus {
+            padding: 27px 23px 27px 23px;
+            border-color: #3498db;
+            outline: 0;
+            color: white;
+            box-shadow: 0 0 7px 3px #e5e8eb inset, 0 0 3px 0px #5b6d75;
+        }
+        
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 20px;
+            border-radius: 5px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+        
+        .slider:hover {
+            opacity: 1;
+        }
+        
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 30px;
+            height: 35px;
+            border-radius: 33%;
+            background: #04BB6D;
+            cursor: pointer;
+        }
+        
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #04AA6D;
+            cursor: pointer;
+        }
+        
+        .bout {
+            width: 85%;
+            margin: 10px;
+            padding: 2px;
+            box-shadow: 0 0 10px 3px #39db34 inset, 0 0 3px 1px #69ff4b6c;
+            border: 2px solid orange;
+            border-radius: 50%;
+        }
+        
+        .bout:hover {
+            box-shadow: 0 0 10px 1px #db4d34 inset, 0 0 3px 0 #db4d34;
+        }
+        .temp { float: left; width: 95%;margin: 7px;padding: 2px 5px;box-shadow: 0 0 7px 1px #e5e8eb inset, 0 0 7px 8px #5b6d75; border: 2px solid orange;border-radius: 25px;background-image: linear-gradient(to right, red,orange,yellow);
+        }
+        .mintemp { float: left;width: relative;margin: 7px;padding: 7px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 5px;
+        }
+        .maxtemp { float: left;width: relative;margin: 7px;padding: 7px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 5px;
+        }
+        #lowtemp {width: relative;margin: 1px;padding: 2px;border: 2px solid green;border-radius: 5px;
+        }
+        #hightemp {width: relative;margin: 1px;padding: 2px;border: 2px solid red;border-radius: 5px;
+        }
+        .roomcolor { float: left; width: 95%;margin: 7px;padding: 7px 20px;box-shadow: 0 0 7px 1px #e5e8eb inset, 0 0 7px 4px #5b6d75; border: 2px solid orange;border-radius: 25px;background-image: linear-gradient(to right, red,orange,yellow);
+        }
+        #colorWell {width: 35%;}
+}
     </style>
 </head>
 
@@ -126,13 +228,13 @@
         <label for="colorWell" style="color: white; text-shadow: 2px 2px 4px #000000;">CHANGE ROOM COLOR:</label>
         <input type="color" value="#ff0000" id="colorWell">
     </div>
-    <div style="float: left;width: 40%;margin: 10px;padding: 2px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 35%;background-image: linear-gradient(to right, orange,yellow);">
+    <div class="card" style="background-image: linear-gradient(to right, orange,yellow);">
         <p style="text-align: center;">LIGHT: ON</p>
         <div class="bout">
             <a class="btn" href="#">ON</a>
         </div>
     </div>
-    <div style="float: left;width: 40%;margin: 10px;padding: 2px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 35%;background-image: linear-gradient(to right, red,orange,yellow);">
+    <div class="card" style="background-image: linear-gradient(to right, red,orange,yellow);">
         <p style="text-align: center;">LIGHT: ON</p>
         <div class="bout">
             <a class="btn" href="#">ON</a>
