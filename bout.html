@@ -136,6 +136,7 @@
    <div class="roomcolor">
         <label for="colorWell" style="color: white; text-shadow: 2px 2px 4px #000000;">CHANGE ROOM COLOR:</label>
         <input type="color" value="#ff0000" id="colorWell">
+     
     </div>
     <div class="card" style="background-image: linear-gradient(to right, orange,yellow);">
         <p style="text-align: center;">LIGHT: ON</p>
@@ -170,7 +171,10 @@
              <button id="mintempupbtn" onclick="mintempup('100')">></button>
       </div>
       <div class="maxtemp">
-
+           <button id="maxtempdownbtn" onclick="maxtempdown('0')"><</button>
+            <input type="text" id="maxtemp" value="25" />
+             <button id="maxtempupbtn" onclick="maxtempup('100')">></button>
+     
       </div>
     </div>
     <div class="bslider"style="background-image: linear-gradient(to right, red, yellow, orange);">
@@ -223,6 +227,18 @@ function mintempdown(min) {
     document.getElementById("mintemp").value = parseInt(document.getElementById("mintemp").value) - 1;
     if (document.getElementById("mintemp").value <= parseInt(min)) {
         document.getElementById("mintemp").value = min;
+    }
+}
+function maxtempup(max) {
+    document.getElementById("maxtemp").value = parseInt(document.getElementById("maxtemp").value) + 1;
+    if (document.getElementById("maxtemp").value >= parseInt(max)) {
+        document.getElementById("maxtemp").value = max;
+    }
+}
+function maxtempdown(min) {
+    document.getElementById("maxtemp").value = parseInt(document.getElementById("maxtemp").value) - 1;
+    if (document.getElementById("maxtemp").value <= parseInt(min)) {
+        document.getElementById("maxtemp").value = min;
     }
 }
 </script>
