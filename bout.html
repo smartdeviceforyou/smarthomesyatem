@@ -108,9 +108,15 @@
 
 <body style="background-color: #fce4e4;">
 
+       <h1 style="text-align: center;  color: white; text-shadow: 2px 2px 4px #000000;"> SMART HOME SYSTEM </h1>
+    <h2 style="text-align: center;  color: white; text-shadow: 2px 2px 4px #000000;"> SMART BOARD </h2>
 
-    <h1 style="  color: white; text-shadow: 2px 2px 4px #000000;"> SMART BOARD </h1>
-
+    <div style="float: left;width: relative;margin: 10px;padding: 2px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 35%;background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);">
+        <p style="text-align: center;">LIGHT: ON</p>
+        <div class="bout">
+            <a class="btn" href="#">ON</a>
+        </div>
+    </div>
     <div style="float: left;width: relative;margin: 10px;padding: 2px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 35%;background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);">
         <p style="text-align: center;">LIGHT: ON</p>
         <div class="bout">
@@ -121,7 +127,31 @@
     <div class="bout">
         <a class="btn" href="#">OF</a>
     </div>
-
+    <div class="bout">
+        <a class="btn" href="#">OF</a>
+    </div>
+    <div class="temp">
+      <div class="mintemp">
+  <label for="ltemp">Choose a car:</label>
+<select name="ltemp" id="lowtemp">
+  <option  href="20" >20</option>
+  <option  href="21" >21</option>
+  <option  href="22" >22</option>
+  <option  href="22" >23</option>
+  <option  href="24" >24</option>
+</select>
+      </div>
+      <div class="mixtemp">
+<label for="htemp">Choose a car:</label>
+<select name="htemp" id="hightemp">
+  <option  href="20" >20</option>
+  <option  href="21" >21</option>
+  <option  href="22" >22</option>
+  <option  href="22" >23</option>
+  <option  href="24" >24</option>
+</select>
+      </div>
+    </div>
     <div style="background-image: linear-gradient(to right, rgb(218, 95, 95),rgb(214, 160, 60),rgb(218, 218, 76),rgb(56, 143, 56),rgb(118, 118, 180),rgb(127, 95, 150),rgb(122, 76, 122));float: left;width: 100%;margin: 10px;padding: 15px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 15px;">
         <p>FAN SPEED >>>>>>>>> : <span id="demo"></span>%</p>
         <input type="range" min="1" max="100" value="1" class="slider" id="myRange">
