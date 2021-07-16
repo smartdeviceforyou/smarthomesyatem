@@ -206,7 +206,7 @@
   </script>
 <script>
         var colorWell;
-        var defaultColor = "#0000ff";
+        var defaultColor = "#fce4e4";
         window.addEventListener("load", startup, false);
         function startup() {
              colorWell = document.querySelector("#colorWell");
@@ -219,12 +219,12 @@
           var body = document.querySelector("body");
 
            if (body) {
-           body.style.color = event.target.value;
+           body.style.background-color = event.target.value;
             }
           }
               function updateAll(event) {
               document.querySelectorAll("body").forEach(function(body) {
-              body.style.color = event.target.value;
+              body.style.background-color = event.target.value;
               });
            }
 </script>
