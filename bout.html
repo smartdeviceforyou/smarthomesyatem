@@ -19,7 +19,8 @@
         *:after {
             box-sizing: inherit;
         }
-       
+        p* {text-align: center;}
+        h1 h2 h3 h6 { color: orange;}
      .card {
          float: left;width: 40%;margin: 10px;padding: 2px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 35%;
      }
@@ -135,19 +136,14 @@
 <a href="?4"></a>
        <h1 style="text-align: center;  color: white; text-shadow: 2px 2px 4px #000000;"> SMART HOME SYSTEM </h1>
     <h2 style="text-align: center;  color: white; text-shadow: 2px 2px 4px #000000;"> SMART BOARD </h2>
-   <div class="roomcolor">
-        <label for="colorWell" style="color: white; text-shadow: 2px 2px 4px #000000;">CHANGE ROOM COLOR:</label>
-        <input type="background-color" value="#ff0000" id="colorWell">
-     
-    </div>
     <div class="card" style="background-image: linear-gradient(to right, orange,yellow);">
-        <p style="text-align: center;">LIGHT: ON</p>
+        <p>LIGHT: ON</p>
         <div class="bout">
             <a class="btn" href="?1=tog1">ON</a>
         </div>
     </div>
     <div class="card" style="background-image: linear-gradient(to right, red,orange,yellow);">
-        <p style="text-align: center;">LIGHT: ON</p>
+        <p>LIGHT: ON</p>
        <div class="bout">
             <a class="btn" href="?1=tog2">ON</a>
         </div>
@@ -196,30 +192,6 @@
             output.innerHTML = this.value;
         }
   </script>
-<script>
-        var colorWell;
-        var defaultColor = "#fce4e4";
-        window.addEventListener("load", startup, false);
-        function startup() {
-             colorWell = document.querySelector("#colorWell");
-             colorWell.value = defaultColor;
-             colorWell.addEventListener("input", updateFirst, false);
-             colorWell.addEventListener("change", updateAll, false);
-             colorWell.select();
-            }
-         function updateFirst(event) {
-          var body = document.querySelector("body");
-
-           if (body) {
-           body.style.background-color = event.target.value;
-            }
-          }
-              function updateAll(event) {
-              document.querySelectorAll("body").forEach(function(body) {
-              body.style.background-color = event.target.value;
-              });
-           }
-</script>
 <script>
 function mintempup(max) {
     document.getElementById("mintemp").value = parseInt(document.getElementById("mintemp").value) + 1;
