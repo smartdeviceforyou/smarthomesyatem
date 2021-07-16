@@ -20,52 +20,21 @@
         .tempbtn {width: 40px;height: 40px;border-radius: 2px;padding: 12px;}
         .slider {-webkit-appearance: none;width: 100%;height: 20px;border-radius: 5px;background: #d3d3d3;outline: none;opacity: 0.7;-webkit-transition: .2s;transition: opacity .2s;}
         
-        .slider:hover {
-            opacity: 1;
-        }
+        .slider:hover {opacity: 1;}
         
-        .slider::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 30px;
-            height: 35px;
-            border-radius: 33%;
-            background: #04BB6D;
-            cursor: pointer;
-        }
+        .slider::-webkit-slider-thumb {-webkit-appearance: none;appearance: none;width: 30px;height: 35px;border-radius: 33%;background: #04BB6D;cursor: pointer;  }
         
-        .slider::-moz-range-thumb {
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            background: #04AA6D;
-            cursor: pointer;
-        }
+        .slider::-moz-range-thumb {width: 25px;height: 25px;border-radius: 50%;background: #04AA6D;cursor: pointer;}
         
-        .bout {
-            width: 85%;
-            margin: 10px;
-            padding: 2px;
-            box-shadow: 0 0 10px 3px #39db34 inset, 0 0 3px 1px #69ff4b6c;
-            border: 2px solid orange;
-            border-radius: 50%;
-        }
+        .bout {width: 85%;margin: 10px;padding: 2px;box-shadow: 0 0 10px 3px #39db34 inset, 0 0 3px 1px #69ff4b6c;border: 2px solid orange;border-radius: 50%;}
         
-        .bout:hover {
-            box-shadow: 0 0 10px 1px #db4d34 inset, 0 0 3px 0 #db4d34;
-        }
-        .temp { float: left; width: 95%;margin: 7px;padding: 2px 5px;box-shadow: 0 0 7px 1px #e5e8eb inset, 0 0 7px 8px #5b6d75; border: 2px solid orange;border-radius: 25px;background-image: linear-gradient(to right, red,orange,yellow);
-        }
-        .mintemp { float: left;width: 45%;margin: 7px;padding: 3px 10px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 5px;
-        }
-        .maxtemp { float: left;width: 45%;margin: 7px;padding: 3px 10px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 5px;
-        }
-        #lowtemp {width: relative;margin: 1px;padding: 2px;border: 2px solid green;border-radius: 5px;
-        }
-        #hightemp {width: relative;margin: 1px;padding: 2px;border: 2px solid red;border-radius: 5px;
-        }
-        .roomcolor { float: left; width: 95%;margin: 7px;padding: 7px 20px;box-shadow: 0 0 7px 1px #e5e8eb inset, 0 0 7px 4px #5b6d75; border: 2px solid orange;border-radius: 25px;background-image: linear-gradient(to right, red,orange,yellow);
-        }
+        .bout:hover {box-shadow: 0 0 10px 1px #db4d34 inset, 0 0 3px 0 #db4d34;}
+        .temp { float: left; width: 95%;margin: 7px;padding: 2px 5px;box-shadow: 0 0 7px 1px #e5e8eb inset, 0 0 7px 8px #5b6d75; border: 2px solid orange;border-radius: 25px;background-image: linear-gradient(to right, red,orange,yellow);}
+        .mintemp { float: left;width: 45%;margin: 7px;padding: 3px 10px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 5px;}
+        .maxtemp { float: left;width: 45%;margin: 7px;padding: 3px 10px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 5px;}
+        #lowtemp {width: relative;margin: 1px;padding: 2px;border: 2px solid green;border-radius: 5px;}
+        #hightemp {width: relative;margin: 1px;padding: 2px;border: 2px solid red;border-radius: 5px;}
+        .roomcolor { float: left; width: 95%;margin: 7px;padding: 7px 20px;box-shadow: 0 0 7px 1px #e5e8eb inset, 0 0 7px 4px #5b6d75; border: 2px solid orange;border-radius: 25px;background-image: linear-gradient(to right, red,orange,yellow);}
         #colorWell {width: 35%;}
         .bslider { float: left;width: 95%;margin: 10px;padding: 4px 15px 20px 15px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 15px;}
 
@@ -104,7 +73,12 @@
         </div>
     </div>
     
-    <div class="temp">
+    
+    <div class="bslider"style="background-image: linear-gradient(to right, red, yellow, orange);">
+        <p style="text-align: center;">FAN SPEED >>>>>>>>> : <span id="demo">href="?2="</span>%</p>
+        <input type="range" min="1" max="100" value="1"  class="slider" id="myRange">
+    </div>
+   <div class="temp">
         <h3 style="text-align: center;  color: white; text-shadow: 2px 2px 4px #000000;"> TEMPERATURE CANTROL SYSTEM </h3>
       <div class="mintemp">
           <h6 style="text-align: center;  color: white; text-shadow: 2px 2px 4px #000000;"> Min-Temp </h6>
@@ -120,11 +94,6 @@
      
       </div>
     </div>
-    <div class="bslider"style="background-image: linear-gradient(to right, red, yellow, orange);">
-        <p style="text-align: center;">FAN SPEED >>>>>>>>> : <span id="demo">href="?2="</span>%</p>
-        <input type="range" min="1" max="100" value="1"  class="slider" id="myRange">
-    </div>
-   
   <script>
         var slider = document.getElementById("myRange");
         var output = document.getElementById("demo");
