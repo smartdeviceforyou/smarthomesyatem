@@ -28,14 +28,14 @@
   color: #ffffff;
   display: block;
   transition: 0.3s;
-  animation-name: fadeInRight; 
+  animation-name: fadeIn; 
   animation-duration: 2s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: orange;
-  animation-name: fadeOutRight; 
+  animation-name: fadeOut; 
   animation-duration: 2s;
 }
 
@@ -57,7 +57,8 @@
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: 18px; animation-name: fadeInRight;  }
+	.sidenav a:hover { animation-name: fadeOutRight; }
 }
  #wind1 {
           position: fixed;
