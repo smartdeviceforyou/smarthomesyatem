@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,127 +7,72 @@
     <meta name="author" content="">
     <title>SMART WEB UI</title>
 
-    <style> html {box-sizing: border-box;scroll-behavior: smooth;}
-        
-        *,*:before,*:after {box-sizing: inherit;}
-     .card {float: left;width: 40%;margin: 10px;padding: 2px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 35%;}
-        
-        .btn {box-sizing: border-box;background-color: transparent;border: 2px solid #e74c3c;border-radius: 50%;cursor: pointer;display: flex;font-size: 1rem;font-weight: 400;line-height: 1;margin: 20px;padding: 27px 23px 27px 23px;text-decoration: none;text-align: center;font-weight: 700;border-color: #3498db;color: white;box-shadow: 0 0 7px 1px #3498db inset, 0 0 7px 15px #3498db;outline: 0;}
-        
-        .btn:hover,.btn:focus {padding: 27px 23px 27px 23px;border-color: #3498db;outline: 0;color: white;box-shadow: 0 0 7px 3px #3498db inset, 0 0 3px 0px #3498db;}
-        .btemp {width: 40%;height: 40px;border-radius: 2px;}
-        .tempbtn {width: 40px;height: 40px;border-radius: 2px;padding: 12px;}
-        .slider {-webkit-appearance: none;width: 100%;height: 20px;border-radius: 5px;background: #d3d3d3;outline: none;opacity: 0.7;-webkit-transition: .2s;transition: opacity .2s;}
-        
-        .slider:hover {opacity: 1;}
-        
-        .slider::-webkit-slider-thumb {-webkit-appearance: none;appearance: none;width: 30px;height: 35px;border-radius: 33%;background: #04BB6D;cursor: pointer;  }
-        
-        .slider::-moz-range-thumb {width: 25px;height: 25px;border-radius: 50%;background: #04AA6D;cursor: pointer;}
-        
-        .bout {width: 85%;margin: 10px;padding: 2px;box-shadow: 0 0 10px 3px #39db34 inset, 0 0 3px 1px #69ff4b6c;border: 2px solid orange;border-radius: 50%;}
-        
-        .bout:hover {box-shadow: 0 0 10px 1px #db4d34 inset, 0 0 3px 0 #db4d34;}
-        .temp { float: left; width: 95%;margin: 7px;padding: 2px 5px;box-shadow: 0 0 7px 1px #e5e8eb inset, 0 0 7px 8px #5b6d75; border: 2px solid orange;border-radius: 25px;background-image: linear-gradient(to right, red,orange,yellow);}
-        .mintemp { float: left;width: 45%;margin: 7px;padding: 3px 10px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 5px;}
-        .maxtemp { float: left;width: 45%;margin: 7px;padding: 3px 10px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 5px;}
-        #lowtemp {width: relative;margin: 1px;padding: 2px;border: 2px solid green;border-radius: 5px;}
-        #hightemp {width: relative;margin: 1px;padding: 2px;border: 2px solid red;border-radius: 5px;}
-        .roomcolor { float: left; width: 95%;margin: 7px;padding: 7px 20px;box-shadow: 0 0 7px 1px #e5e8eb inset, 0 0 7px 4px #5b6d75; border: 2px solid orange;border-radius: 25px;background-image: linear-gradient(to right, red,orange,yellow);}
-        #colorWell {width: 35%;}
-        .bslider { float: left;width: 95%;margin: 10px;padding: 4px 15px 20px 15px;box-shadow: 2px 2px 5px orange;border: 2px solid orange;border-radius: 15px;}
-
-    </style>
+ <style>
+ html {box-sizing: border-box;scroll-behavior: smooth;}
+ .btn {float: left;width: relative;margin: 15px;padding: 6px;box-shadow: 2px 2px 5px #000000; border: 1px solid #3498db;border-radius: 70px;background-image: linear-gradient(to right, red, yellow, orange);}
+ .obtn {margin: 10px;padding: 5px;border: 2px solid #3498db;border-radius: 60px;background-color: #ffffff;}
+ .obtn:hover {box-shadow: 0 0 15px 2px #000000 inset, 0 0 1px 0  #000000;background-color: #ffffff;}   
+ .btn a{display: flex;border: 2px solid #ffffff;border-radius: 50px;margin: 10px;padding: 40px;box-shadow: 0 0 20px 4px #3498db inset, 0 0 13px 2px  #000000;}
+ .btn a:hover {box-shadow: 0 0 1px 0 #000000 inset, 0 0 1px 0  #000000;background-color: #ffffff;}  
+ .btn p {color: #000066; text-shadow: 2px 2px 4px #000000;}
+ .bslider {float: left;width: 335px;margin: 15px;padding: 6px;box-shadow: 2px 2px 5px #000000;border: 1px solid #3498db;border-radius: 50px;background-image: linear-gradient(to right, red, yellow, orange);}
+ .slider { -webkit-appearance: none; margin: 14px; width: 310px; height: 25px; background: #FFD65C; outline: none; -webkit-transition: .2s; transition: opacity .2s; border-radius: 5px; }
+ .slider::-webkit-slider-thumb {-webkit-appearance: none; appearance: none; width: 35px; height: 35px; background: #003249; cursor: pointer; border-radius: 5px; }
+ .slider::-moz-range-thumb { width: 35px; height: 35px; background: #003249; cursor: pointer; border-radius: 5px;}
+</style>
 </head>
-
 <body>
-<a href="?1"></a>
-<a href="?2"></a>
-<a href="?3"></a>
-<a href="?4"></a>
-       <h1 style="text-align: center;  color: white; text-shadow: 2px 2px 4px #000000;"> SMART HOME SYSTEM </h1>
-    <h2 style="text-align: center;  color: white; text-shadow: 2px 2px 4px #000000;"> SMART BOARD </h2>
-    <div class="card" style="background-image: linear-gradient(to right, orange,yellow);">
-        <p style="text-align: center;">LIGHT: ON</p>
-        <div class="bout">
-            <a class="btn" href="?1=tog1">ON</a>
-        </div>
-    </div>
-    <div class="card" style="background-image: linear-gradient(to right, red,orange,yellow);">
-        <p style="text-align: center;">LIGHT: ON</p>
-       <div class="bout">
-            <a class="btn" href="?1=tog2">ON</a>
-        </div>
-    </div>
-    <div class="card" style="background-image: linear-gradient(to right, orange,yellow);">
-        <p style="text-align: center;">LIGHT: ON</p>
-        <div class="bout">
-            <a class="btn" href="?2=tog1">ON</a>
-        </div>
-    </div>
-    <div class="card" style="background-image: linear-gradient(to right, red,orange,yellow);">
-        <p style="text-align: center;">LIGHT: ON</p>
-       <div class="bout">
-            <a class="btn" href="?2=tog2">ON</a>
-        </div>
-    </div>
-    
-    
-    <div class="bslider"style="background-image: linear-gradient(to right, red, yellow, orange);">
-        <p style="text-align: center;">FAN SPEED >>>>>>>>> : <span id="demo">href="?2="</span>%</p>
-        <input type="range" min="1" max="100" value="1"  class="slider" id="myRange">
-    </div>
-   <div class="temp">
-        <h3 style="text-align: center;  color: white; text-shadow: 2px 2px 4px #000000;"> TEMPERATURE CANTROL SYSTEM </h3>
-      <div class="mintemp">
-          <h6 style="text-align: center;  color: white; text-shadow: 2px 2px 4px #000000;"> Min-Temp </h6>
-           <button id="tempbtn" onclick="mintempdown('0')"><</button>
-            <input type="text" class="btemp" id="mintemp" value="23" />
-             <button id="tempbtn" onclick="mintempup('100')">></button>
-      </div>
-      <div class="maxtemp">
-          <h6 style="text-align: center;  color: white; text-shadow: 2px 2px 4px #000000;"> Max-Temp </h6>
-           <button id="tempbtn" onclick="maxtempdown('0')"><</button>
-            <input type="text" class="btemp" id="maxtemp" value="28" />
-             <button id="tempbtn" onclick="maxtempup('100')">></button>
+      <h1 style="text-align: center; color: #000066; text-shadow: 2px 2px 4px #000000;">SMART HOME SYSTEM</h1>
+      <h2 style="text-align: center;color: #ffffff; text-shadow: 2px 2px 4px #000000;">SMART BOARD</h2>
+     <div class="btn" >
+           <p id="btn1" style="text-align: center;">LIGHT: 1</p>
+           <div class="obtn">
+             <a href="#"></a>
+           </div>
+     </div>
+     <div class="btn">
+           <p style="text-align: center;">LIGHT: 2</p>
+           <div class="obtn">
+             <a href="#"></a>
+           </div>
+     </div>
+     <div class="btn">
+           <p style="text-align: center;">T V</p>
+           <div class="obtn">
+             <a href="#"></a>
+           </div>
+     </div>
+     <div class="btn">
+           <p style="text-align: center;">FAN</p>
+           <div class="obtn">
+             <a href="#"></a>
+           </div>
+     </div>
      
-      </div>
-    </div>
-  <script>
-        var slider = document.getElementById("myRange");
-        var output = document.getElementById("demo");
-        output.innerHTML = slider.value;
-        slider.oninput = function() {
-        output.innerHTML = this.value;
-        }
-  </script>
+    
+     
+      <div class="bslider">
+           <p style="text-align: center; color: #000066; text-shadow: 2px 2px 4px #000000; ">SPEED >>>>>>>>>:<span id="textSliderValue">%SLIDERVALUE%</span></p>
+           <p><input type="range" onchange="updateSliderPWM(this)" id="pwmSlider" min="0" max="1023" value="%SLIDERVALUE%" step="1" class="slider"></p>
+     </div>
+     
 <script>
-function mintempup(max) {
-    document.getElementById("mintemp").value = parseInt(document.getElementById("mintemp").value) + 1;
-    if (document.getElementById("mintemp").value >= parseInt(max)) {
-        document.getElementById("mintemp").value = max;
-    }
-}
-function mintempdown(min) {
-    document.getElementById("mintemp").value = parseInt(document.getElementById("mintemp").value) - 1;
-    if (document.getElementById("mintemp").value <= parseInt(min)) {
-        document.getElementById("mintemp").value = min;
-    }
-}
-function maxtempup(max) {
-    document.getElementById("maxtemp").value = parseInt(document.getElementById("maxtemp").value) + 1;
-    if (document.getElementById("maxtemp").value >= parseInt(max)) {
-        document.getElementById("maxtemp").value = max;
-    }
-}
-function maxtempdown(min) {
-    document.getElementById("maxtemp").value = parseInt(document.getElementById("maxtemp").value) - 1;
-    if (document.getElementById("maxtemp").value <= parseInt(min)) {
-        document.getElementById("maxtemp").value = min;
-    }
-}
-</script>
+
+function updateSliderPWM(element) {
+
+var sliderValue = document.getElementById("pwmSlider").value;
+
+document.getElementById("textSliderValue").innerHTML = sliderValue;
+
+console.log(sliderValue);
+
+var xhr = new XMLHttpRequest();
+
+xhr.open("GET", "/slider?value="+sliderValue, true);
+
+xhr.send();
+
+}</script>
 
 </body>
-
 </html>
