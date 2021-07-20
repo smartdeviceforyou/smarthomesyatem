@@ -98,39 +98,43 @@ html {
   img {
    border-radius: 25px;
   }
-.column {
+.columna {
+  float: left;
   width: 33.3%;
-  padding: 0 1px;
-  align-content: center;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  
 }
-
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-    bordar-redius:25px;
-    margin-bottom: 1px;
-   
-    content: center;
-  }
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-width: 450px) {
+  .sidenava {padding-top: 15px;}
+  .sidenava a {font-size: 18px;animation-name: fadeInRight; }
+	.sidenava a:hover {animation-name: fadeOutRight; }
+.columna {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0 8px;
+  
 }
-
-/* Add some shadows to create a card effect */
-.card {
+	 
+	 
+	 }
+.carda {
   box-shadow: 2px 2px 5px black;
   border: 2px solid orange;
   border-radius: 25px;
-  content: center;
 }
 
+
+
 /* Some left and right padding inside the container */
-.container {
-  padding: 0 1px;
+.containera {
+  padding: 0 16px;
 }
 
 /* Clear floats */
-.container::after, .row::after {
+.containera::after, .row::after {
   content: "";
   clear: both;
   display: table;
@@ -256,52 +260,101 @@ html {
               </a>
          </div>
    
-</div> 
-<h2 style="color: orange; text-align: center;"> ---- MAHARASHTRA ---- </h2>
- 
-              
-  <div class="row">
-   <h2 style="color: orange; text-align: center;"> ---- PUNE ---- </h2>
+
+    <h2 style="color: orange; text-align: center;"> ---- MAHARASHTRA ---- </h2>
+    <h2 style="color: orange; text-align: center;"> ---- PUNE ---- </h2>
          
-   <div class="column" id="ceo">
-      <div class="card">
-   <div class="product-image-wrapper" id="boxb">
-<div class="single-products">
-                                                                    <div class="productinfo">
-							                         <img src="images/relay5v.jpg" style="height: 500px; width: 100%; border-radius:25px;" id="imgp1"  />
-							            </div>
-									<div class="product-overlay">
-										<div class="overlay-content">
-											<h2>Ru 10</h2>
-											<p>5v Relay</p>
-										</div>
-							                </div>
-   </div>
-                                                              <div class="container">
-                                                                      <div class="choose">
-                                                                         <div class="column">
-									  <a class="imgbtn" onclick="document.getElementById('imgp1').src='images/relay5v.jpg'"><img src="images/g1.png" /></a>
-                                                                          <a class="imgbtn" onclick="document.getElementById('imgp1').src='images/Ir.jpg'"><img src="images/g2.png"  /></a>
-                                                                          <a class="imgbtn" onclick="document.getElementById('imgp1').src='images/Pm.jpg'"><img src="images/g3.png" /></a>
-                                                                          <a class="imgbtn" onclick="document.getElementById('imgp1').src='images/Atmega.jpg'"><img src="images/g4.png"  /></a>
-                                                                          <a class="imgbtn" onclick="document.getElementById('imgp1').src='images/16hz.jpg'"><img src="images/g5.png" /></a>
-                                                                         </div>
-                                                                          <h2>10 Ru</h2>
-								          <p>Relay 5v</p>
-                                                                         <div class="column">
-                                                                          <a class="imgbtn1" href="owner.html"><img src="amazon.png" alt="Avatar" class="avatar" ></a>       
-								          <a class="imgbtn1" href="owner.html"><img src="paytm.png" alt="Avatar" class="avatar" ></a>       
-								          <a class="imgbtn1" href="owner.html"><img src="flipkart.png" alt="Avatar" class="avatar" ></a>       
-								          <a class="imgbtn1" href="owner.html"><img src="indiamart.png" alt="Avatar" class="avatar" ></a> 
-								         </div>
-							       </div>
-           </div>
-         </div>
+
+ <div class="rowa">		
+  <div class="columna">
+     <div class="carda">
+      <div class="single-products">
+	<div class="productinfo text-center">
+	<img style="height: relative; width: relative; border-radius:25px; border-color: orange; border-width: 2px;" id="imgp1" src="images/relay5v.jpg" alt="" />
+	</div>
+	<div class="product-overlay" style=" border-radius: 25px;">
+	<div class="overlay-content">
+		<h2>10 RU</h2>
+		<p>5v Relay</p>
+		
+		</div>
+	 </div>
+	</div>
+								         
+    <div class="containera">
+	<a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/relay5v.jpg'"><img src="images/g1.png" /></a>
+        <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/Ir.jpg'"><img src="images/g2.png"  /></a>
+        <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/Pm.jpg'"><img src="images/g3.png" /></a>
+         <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/Atmega.jpg'"><img src="images/g4.png"  /></a>
+         <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/16hz.jpg'"><img src="images/g5.png" /></a>
+	 <h2>10 Ru</h2>
+	 <p>Relay 5v</p>   
+        <a class="imgbtn2" href="home.html"><img src="amazon.png" ></a>       
+	<a class="imgbtn2" href="RGB/index.htm"><img src="paytm.png" ></a>       
+	 <a class="imgbtn2" href=""><img src="flipkart.png" ></a>       
+	 <a class="imgbtn2" href=""><img src="indiamart.png" ></a>  
       </div>
-   
+    </div>
   </div>
-  
-</div>        
+	 <div class="columna">
+     <div class="carda">
+      <div class="single-products">
+	<div class="productinfo text-center">
+	<img style="height: relative; width: relative; border-radius:25px; border-color: orange; border-width: 2px;" id="imgp1" src="images/relay5v.jpg" alt="" />
+	</div>
+	<div class="product-overlay" style=" border-radius: 25px;">
+	<div class="overlay-content">
+		<h2>Ru 10</h2>
+		<p>5v Relay</p>
+		</div>
+	 </div>
+	</div>
+								         
+    <div class="containera">
+	<a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/relay5v.jpg'"><img src="images/g1.png" /></a>
+        <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/Ir.jpg'"><img src="images/g2.png"  /></a>
+        <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/Pm.jpg'"><img src="images/g3.png" /></a>
+         <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/Atmega.jpg'"><img src="images/g4.png"  /></a>
+         <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/16hz.jpg'"><img src="images/g5.png" /></a>
+	 <h2>10 Ru</h2>
+	 <p>Relay 5v</p>   
+        <a class="imgbtn2" href="home.html"><img src="amazon.png" ></a>       
+	<a class="imgbtn2" href="RGB/index.htm"><img src="paytm.png" ></a>       
+	 <a class="imgbtn2" href=""><img src="flipkart.png" ></a>       
+	 <a class="imgbtn2" href=""><img src="indiamart.png" ></a>  
+      </div>
+    </div>
+  </div>
+	 <div class="columna">
+     <div class="carda">
+      <div class="single-products">
+	<div class="productinfo text-center">
+	<img style="height: relative; width: relative; border-radius:25px; border-color: orange; border-width: 2px;" id="imgp1" src="images/relay5v.jpg" alt="" />
+	</div>
+	<div class="product-overlay" style=" border-radius: 25px;">
+	<div class="overlay-content">
+		<h2>Ru 10</h2>
+		<p>5v Relay</p>
+		</div>
+	 </div>
+	</div>
+								         
+    <div class="containera">
+	<a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/relay5v.jpg'"><img src="images/g1.png" /></a>
+        <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/Ir.jpg'"><img src="images/g2.png"  /></a>
+        <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/Pm.jpg'"><img src="images/g3.png" /></a>
+         <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/Atmega.jpg'"><img src="images/g4.png"  /></a>
+         <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/16hz.jpg'"><img src="images/g5.png" /></a>
+	 <h2>10 Ru</h2>
+	 <p>Relay 5v</p>   
+        <a class="imgbtn2" href="home.html"><img src="amazon.png" ></a>       
+	<a class="imgbtn2" href="RGB/index.htm"><img src="paytm.png" ></a>       
+	 <a class="imgbtn2" href=""><img src="flipkart.png" ></a>       
+	 <a class="imgbtn2" href=""><img src="indiamart.png" ></a>  
+      </div>
+    </div>
+  </div>
+ </div>		
       
 </section>
 
